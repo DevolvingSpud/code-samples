@@ -29,7 +29,7 @@ public class TestTicTacToe {
 		// Ensure that the board contains empty values
 		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < 3; j++) {
-				assertTrue(board.valueAt(i,j).equals(TTTBoard.EMPTY));
+				assertNull(board.valueAt(i,j));
 			}
 		}
 	}

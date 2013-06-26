@@ -2,13 +2,26 @@ package codesample.tdd.tictactoe;
 
 import static org.junit.Assert.*;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 public class TestTicTacToe {
+	
+	TTTBoard board;
+
+	@Before
+	public void setUp() {
+		board = new TTTBoard();
+	}
+	
+	@After
+	public void tearDown() {
+		board = null;
+	}
 
 	@Test
-	public void testStartGame() {
-		TTTBoard board = new TTTBoard();
+	public void testInitGame() {
 		
 		// Make sure the board was created
 		assertNotNull(board);
@@ -19,6 +32,21 @@ public class TestTicTacToe {
 				assertTrue(board.valueAt(i,j).equals(TTTBoard.EMPTY));
 			}
 		}
+	}
+	
+	@Test
+	public void testFirstTurn() {
+		
+		// The first move should only allow X, and it should only allow the user to place
+		// it in an empty space
+		
+	}
+	
+	public void testTurns() {
+		
+		// Turns should alternate between X and O, and it should only allow the current player
+		// to place it in an empty space		
+		
 	}
 
 }

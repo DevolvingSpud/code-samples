@@ -39,14 +39,23 @@ public class TestTicTacToe {
 		
 		// The first move should only allow X, and it should only allow the user to place
 		// it in an empty space
-		
+		fail("Not implemented");
 	}
 	
-	public void testTurns() {
+	@Test
+	public void testTakeTurns() {
 		
 		// Turns should alternate between X and O, and it should only allow the current player
 		// to place it in an empty space		
+		fail("Not implemented");
 		
+	}
+	
+	@Test
+	public void testGameOver() {
+		
+		// Make sure that the game ends appropriately (and doesn't end inappropriately)
+		fail("Not implemented");
 	}
 
 }

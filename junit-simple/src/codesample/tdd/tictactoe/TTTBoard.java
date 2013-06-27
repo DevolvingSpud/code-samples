@@ -20,7 +20,7 @@ public class TTTBoard {
 	 * @author Nate
 	 *
 	 */
-	public enum Marks {X, O}
+	public enum Marks {X, O};
 
 	private Marks[][] board = new Marks[3][3];
 	
@@ -45,8 +45,12 @@ public class TTTBoard {
 	 * @param y y-coordinate of the cell to retrieve
 	 * @return the {@link Mark} at the given coordinate, or null if no mark exists
 	 */
-	public Marks valueAt(int x, int y) {
+	public Marks getMarkAt(int x, int y) {
 		return board[x][y];
+	}
+	
+	protected void setMarkAt(Marks mark, int x, int y) {
+		board[x][y] = mark;
 	}
 
 }

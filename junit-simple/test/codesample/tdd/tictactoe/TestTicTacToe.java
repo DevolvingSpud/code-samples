@@ -29,33 +29,114 @@ public class TestTicTacToe {
 		// Ensure that the board contains empty values
 		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < 3; j++) {
-				assertNull(board.valueAt(i,j));
+				assertNull(board.getMarkAt(i,j));
 			}
 		}
 	}
 	
 	@Test
-	public void testFirstTurn() {
-		
-		// The first move should only allow X, and it should only allow the user to place
-		// it in an empty space
+	public void testSetValidMarks() {
+		// Test setting marks in valid places on the board
 		fail("Not implemented");
 	}
 	
 	@Test
-	public void testTakeTurns() {
+	public void testSetInvalidMarks() {
 		
-		// Turns should alternate between X and O, and it should only allow the current player
-		// to place it in an empty space		
+		// Test setting marks that are invalid
 		fail("Not implemented");
-		
 	}
 	
 	@Test
-	public void testGameOver() {
+	public void testFirstTurnIsX() {
+		
+		// X goes first	
+		fail("Not implemented");
+	}
+	
+	@Test
+	public void testFirstTurnIsO() {
+		
+		// X goes first; trying to put O in first should fail
+		fail("Not implemented");
+	}
+	
+	@Test
+	public void testXGoesThenO() {
+		
+		// X goes first; then O should be able to go
+		fail("Not implemented");
+	}
+	
+	@Test
+	public void testOGoesThenX() {
+		
+		// X goes first; trying to put O in first should fail, but then X should
+	    // be able to go.
+		fail("Not implemented");
+	}
+	
+	@Test
+	public void testXThenOThenX() {
+		
+		// Test that alternating turns works
+		fail("Not implemented");
+	}
+	
+	@Test
+	public void testXWinsGameAcross() {
 		
 		// Make sure that the game ends appropriately (and doesn't end inappropriately)
 		fail("Not implemented");
 	}
 
+	@Test
+	public void testXWinsGameDown() {
+		
+		// Make sure that the game ends appropriately (and doesn't end inappropriately)
+		fail("Not implemented");
+	}
+	
+	@Test
+	public void testXWinsGameDiagonal() {
+		
+		// Make sure that the game ends appropriately (and doesn't end inappropriately)
+		fail("Not implemented");
+	}
+	
+	@Test
+	public void testXStalemates() {
+		
+		// Make sure that the game ends appropriately (and doesn't end inappropriately)
+		fail("Not implemented");
+	}
+
+	@Test
+	public void testOWinsGameAcross() {
+		
+		// Make sure that the game ends appropriately (and doesn't end inappropriately)
+		fail("Not implemented");
+	}
+
+	@Test
+	public void testOWinsGameDown() {
+		
+		// Make sure that the game ends appropriately (and doesn't end inappropriately)
+		fail("Not implemented");
+	}
+	
+	@Test
+	public void testOWinsGameDiagonal() {
+		
+		// Make sure that the game ends appropriately (and doesn't end inappropriately)
+		fail("Not implemented");
+	}
+	
+	@Test
+	public void testOStalemates() {
+		
+		// Make sure that the game ends appropriately (and doesn't end inappropriately)
+		fail("Not implemented");
+	}
+	
 }
